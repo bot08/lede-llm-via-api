@@ -1,6 +1,6 @@
 # AI Client on LEDE 17.01 (OpenWrt)
 
-This project demonstrates how to run a simple AI client directly on an OpenWrt/LEDE 17.01 router using **temporary RAM storage**.
+This project demonstrates how to run a simple AI client directly on an OpenWrt/LEDE 17.01 router using **temporary RAM storage**. Tested on a 4/32 router.
 
 ---
 
