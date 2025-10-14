@@ -58,7 +58,11 @@ The script will send the prompt to the AI model via the Gemini API and output th
 ### Option 1 — Clean up manually (recommended)
 
 ```bash
-# Remove temporary packages from RAM
+# Delete packages
+opkg remove curl --autoremove
+opkg remove ca-certificates --autoremove
+
+# Remove temporary data from RAM
 rm -rf /tmp/usr /tmp/lib /tmp/bin /tmp/etc/ssl
 
 # Remove the AI script
