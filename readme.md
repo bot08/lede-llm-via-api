@@ -73,7 +73,7 @@ The script will send the prompt to the AI model via the Gemini API and output th
 ### Script Optimizations
 The script includes several optimizations for resource-constrained routers:
 1. **Zero temp files**: Uses stdin piping (`-d @-`) instead of creating temp files
-2. **Efficient pipeline**: Single `sed` command instead of `grep | sed | tr`
+2. **Efficient pipeline**: Combined `grep` and `sed` into single `sed` command, reducing process count
 3. **Minimal overhead**: Conditional environment variable exports
 4. **Error suppression**: stderr redirected to `/dev/null` to reduce output
 
